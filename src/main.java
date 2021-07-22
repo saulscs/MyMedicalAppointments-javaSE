@@ -1,7 +1,16 @@
-public class main {
-    public static void main(String[] args){
+import static Ui.UIMenu.*;
+
+class Main {
+    public static void main(String[] args) {
+
         Doctor myDoctor = new Doctor();
-        myDoctor.name = "Alejandro Rodriguez";
+        myDoctor.name = "Alejandro Rodríguez";
         myDoctor.showName();
+        myDoctor.showId();
+
+        Doctor myDoctorAnn = new Doctor();
+        myDoctor.showId();
+
+        showMenu();
     }
 }
