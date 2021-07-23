@@ -8,7 +8,7 @@ public class Doctor {
     }
 
     Doctor(String name, String speciality ){
-        System.out.println("El nombre dle doctor es: " + name);
+        System.out.println("El nombre del doctor es: " + name);
         id ++;
         this.name = name;
         this.speciality = speciality;
