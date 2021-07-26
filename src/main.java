@@ -16,12 +16,7 @@ class Main {
         }
 
         Patient patient = new Patient("Alejandra", "alejandra@mail.com");
-        System.out.println(patient.getName());
-        System.out.println(patient.getEmail());
-
-        patient.setPhoneNumber("12345678");
-        
-        System.out.println(patient.getPhoneNumber());
+       System.out.println(patient);
 
     }
 }

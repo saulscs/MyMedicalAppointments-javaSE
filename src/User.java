@@ -49,4 +49,14 @@ public class User {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+    @Override
+    public String toString() {
+        return "" +
+                "\nid=" + id +
+                ", \nname='" + name + '\'' +
+                ", \nemail='" + email + '\'' +
+                ", \naddress='" + address + '\'' +
+                ", \nphoneNumber='" + phoneNumber + '\'';
+    }
 }
