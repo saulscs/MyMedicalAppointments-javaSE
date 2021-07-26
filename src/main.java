@@ -20,6 +20,7 @@ class Main {
         System.out.println(patient.getEmail());
 
         patient.setPhoneNumber("12345678");
+        
         System.out.println(patient.getPhoneNumber());
 
     }
