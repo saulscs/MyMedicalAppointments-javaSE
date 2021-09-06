@@ -54,4 +54,9 @@ public class Patient extends User {
                 ", \nheight=" + height +
                 ", \nblood='" + blood + '\'';
     }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Pasiente: Cruz Roja");
+    }
 }
