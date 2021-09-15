@@ -9,9 +9,9 @@ class Main {
     public static void main(String[] args) {
         //showMenu();
         Doctor myDoctor = new Doctor("Anahí Salgado", "Pediatria");
-        myDoctor.addAvailableAppointment(new Date(), "4pm");
-        myDoctor.addAvailableAppointment(new Date(), "1pm");
-        myDoctor.addAvailableAppointment(new Date(), "10pm");
+        myDoctor.addAvailableAppointment(new String(),"4pm");
+        myDoctor.addAvailableAppointment(new String(), "1pm");
+        myDoctor.addAvailableAppointment(new String(), "10pm");
 
         System.out.println(myDoctor.getAvailableAppointments());
 
