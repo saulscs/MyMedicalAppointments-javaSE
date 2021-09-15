@@ -45,7 +45,7 @@ public class UIMenu {
         }while (response != 0);
     }
 
-    private static authUser(int userType){
+    private static void authUser(int userType){
         //userType = 1 Doctor
         //userType = 2 Paciente
 
@@ -72,6 +72,7 @@ public class UIMenu {
                         //Obtener el usuario logeado
                         doctorLogged = d;
                         //showDoctormenu
+                        UIDoctorMenu.showDoctorMenu();
 
                     }
                 }
@@ -82,6 +83,7 @@ public class UIMenu {
                         emailCorrect = true;
                         patientLogged = p;
                         //showPatientMenu
+                        showPatientMenu();
                     }
                 }
             }
