@@ -28,6 +28,7 @@ public class UIPatientMenu {
                     showBookAppointmentMenu();
                     break;
                 case 2:
+                    showPatientMyAppointments();
                     break;
                 case 0:
                     UIMenu.showMenu();
@@ -103,16 +104,16 @@ public class UIPatientMenu {
         do {
             System.out.println(":: My Appointments");
             if(UIMenu.patientLogged.getAppointmentDoctors().size() == 0){
-                System.out.println("Dont have appoinments");
+                System.out.println("Don`t have appoinments ?");
                 break;
             }
 
             for (int i=0; i < UIMenu.patientLogged.getAppointmentDoctors().size(); i++){
                 int j = i +1;
                 System.out.println(j + " . " +
-                        "Date" + UIMenu.patientLogged.getAppointmentDoctors().get(i).getDate() +
-                        "Time" + UIMenu.patientLogged.getAppointmentDoctors().get(i).getTime() +
-                        "\nDoctor" + UIMenu.patientLogged.getAppointmentDoctors().get(i).getDoctor().getName()
+                        "Date " + UIMenu.patientLogged.getAppointmentDoctors().get(i).getDate() +
+                        "\nTime " + UIMenu.patientLogged.getAppointmentDoctors().get(i).getTime() +
+                        "\nDoctor " + UIMenu.patientLogged.getAppointmentDoctors().get(i).getDoctor().getName()
                 );
             }
             System.out.println("0. Return");
